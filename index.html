@@ -10,7 +10,32 @@
     <img src="/Cool girl.png" alt="cool girl" class="banner">
     <div class="info">
 <h1>Info</h1>
-    <p></p>
+<img src="/download20260503001325.png" alt="profile pic" class="profile picture">
+    <ul class="name">
+        <li>⭐Username: Magiu</li>
+        <li>⭐Age: 17</li>
+        <li>⭐Hobbies: Crotchet, singing, gaming</li>
+        <li>⭐Favorite music: Punk, indie</li>
+    </ul>
     </div>
+    <audio src="Faulty Information (128kbit_AAC).m4a", id="mysong"></audio>
+<button onclick="playAudio()" class="hudbaa">Try my favourite song🎶</button>
+<script>
+    var audio = document.getElementById("mysong");
+        var button = document.querySelector(".hudbaa");
+    function playAudio(mysong) {
+      if (audio.paused) {
+        audio.play()
+        button.innerHTML ="AW already enough :( ?" ;
+      } else {
+        audio.pause()
+        button.innerHTML = "Try my favourite song🎶"
+      }
+      if (audio.paused) {restartaudio()}
+      function restartaudio() {audio.currentTime = 0;   
+        
+      }
+    }
+</script>
 </body>
 </html>
