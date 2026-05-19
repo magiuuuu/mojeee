@@ -44,3 +44,16 @@ border-bottom: 5px solid rgb(0, 0, 0);
   border-bottom: 5px solid rgb(0, 0, 0);
 text-align: left;
 }
+
+.hudbaa { display: grid;
+  width: 100px;
+  height: 100px;
+  grid-column: 5; 
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  font-size: 20px;
+  color: rgb(136, 50, 149); 
+  border: 5px solid rgb(0, 0, 0);
+
+}
