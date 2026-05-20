@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(circle, rgb(148, 62, 148) 10%, rgb(133, 18, 114) 90%); 
+  background: radial-gradient(circle, rgb(148, 62, 148) 30%, rgb(133, 18, 114) 90%); 
   margin: 0;
 padding: 0; 
 font-family: cursive;}
@@ -12,13 +12,15 @@ font-family: cursive;}
 }
 
 .info {
-  position: relative;
+  position: absolute;
+  flex-direction: row;
+  align-items: flex-start;
   grid-column: 1;
   grid-row: 4;
   background-color: rgba(130, 221, 228, 0.528);
-  width: 600px;
+  width: 400px;
   height: auto;
-  margin: 20px 0 0 20px;
+  margin: 0 0 0 0;
   border-color: rgb(17, 76, 105);
   border-width: 10px;
   border-style: solid;
@@ -27,24 +29,24 @@ font-family: cursive;}
 .top-row {
   position: relative;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 100px 0 0 0;
   min-height: 260px;
 }
 
 .button-row {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 220%;
   transform: translateY(-50%);
   width: auto;
   text-align: right;
-  margin: 0;
+  margin: 100px 0 0 0;
 }
 
 .animal-placement {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 280%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -56,7 +58,7 @@ font-family: cursive;}
 .animal-placement img {
   display: block;
   width: auto;
-  height: 200px;
+  height: 400px;
   margin: 10px auto 0;
 }
 
@@ -67,6 +69,8 @@ text-align: center;
 border-bottom: 5px solid rgb(0, 0, 0);
 }
 .profile {
+  width: 400px;
+  height: auto
   grid-column: 2; grid-row: 2;
   border-radius: 5px;
   border-color: rgb(9, 62, 89);
@@ -115,5 +119,13 @@ text-align: left;
   display: block;
   object-fit: cover;
   position: relative;
+  margin-right: 20px;
 }
 
+.textanimal {
+  font-family: cursive;
+  text-size-adjust: auto;
+  color: rgb(130, 221, 228, 1);
+  font-size: 52px;
+
+}
