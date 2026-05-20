@@ -82,7 +82,7 @@ border-bottom: 5px solid rgb(0, 0, 0);
 }
 .profile {
   width: 400px;
-  height: auto
+  height: auto;
   grid-column: 2; grid-row: 2;
   border-radius: 5px;
   border-color: rgb(9, 62, 89);
@@ -150,7 +150,7 @@ text-align: left;
   position: absolute;
   top: 18%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .textdragonfly {
@@ -161,5 +161,71 @@ text-align: left;
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  .top-row {
+    position: static;
+    display: block;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0 10px;
+  }
+
+  .button-row {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+
+  .animal-placement {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .penguin,
+  .dragonfly {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .info {
+    position: static;
+    width: calc(100% - 20px);
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .texttlacitko {
+    font-size: 28px;
+  }
+
+  .textanimal {
+    font-size: 36px;
+  }
+
+  .textpenguin,
+  .textdragonfly {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: 24px;
+  }
+
+  .profile {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 20px;
+  }
 }
