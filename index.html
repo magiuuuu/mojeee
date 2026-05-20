@@ -7,16 +7,16 @@
     <title>About meee!</title>
 </head>
 <body>
-    <img src="/Cool girl.png" alt="cool girl" class="banner">
+    <img src="./Cool girl.png" alt="cool girl" class="banner">
     <div class="button-row">
       <button class="hudbaa"; onclick="playAudio()"> 
-        <img src="/Faulty Information (MK).jpg" alt="" class="albumcover">
+        <img src="./Faulty Information (MK).jpg" alt="" class="albumcover">
         <span class="texttlacitko">Try my favourite song🎶</span></button>
     </div>
         <div class="info">
         <h1>Info</h1>
      <audio src="Faulty Information (128kbit_AAC).m4a" id="mysong"></audio>
-<img src="/download20260503001325.png" alt="profile pic" class="profile picture">
+<img src=."/download20260503001325.png" alt="profile pic" class="profile picture">
     <ul class="name">
         <li>⭐Username: Magiu</li>
         <li>⭐Age: 17</li>
@@ -32,11 +32,11 @@
       if (audio.paused) {
         audio.play()
         button.innerHTML ="AW already enough :( ?";
-        image.src ="/Faulty Information (MK).jpg"
+        image.src ="./Faulty Information (MK).jpg"
       } else {
         audio.pause()
         button.innerHTML = "Try my favourite song🎶"
-        image.src ="/Faulty Information (MK).jpg"
+        image.src ="./Faulty Information (MK).jpg"
       }
       if (audio.paused) {restartaudio()}
       function restartaudio() {audio.currentTime = 0;   
