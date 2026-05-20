@@ -4,11 +4,27 @@ body {
 padding: 0; 
 font-family: cursive;}
 
+@media (max-width: 600px) {
+  body {
+    background: radial-gradient(circle, rgb(148, 62, 148) 30%, rgb(133, 18, 114) 90%);
+    padding: 0;
+    font-family: cursive;
+  }
+}
+
 .banner { 
   width: 100%; 
   height: 600px; 
   padding:0px 0px 0px,0px; 
   align-self: center;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .info {
@@ -27,13 +43,29 @@ font-family: cursive;}
   border-radius: 10px;
 }
 
+@media (max-width: 600px) {
+  .info {
+    position: static;
+    width: calc(100% - 20px);
+    margin: 20px auto;
+    padding: 16px;
+  }
+}
+
 .top-row {
   position: relative;
   width: 100%;
   margin: 100px 0 0 0;
   min-height: 260px;
 }
-
+@media (max-width: 600px) {
+  .top-row {
+    position: static;
+    width: 100%;
+    margin: 20px 0 0 0;
+    min-height: auto;
+  }
+}
 .button-row {
   position: absolute;
   right: 0;
@@ -43,7 +75,14 @@ font-family: cursive;}
   text-align: right;
   margin: 100px 0 0 0;
 }
-
+@media (max-width: 600px) {
+  .button-row {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}
 .animal-placement {
   position: absolute;
   left: 50%;
@@ -55,7 +94,16 @@ font-family: cursive;}
   justify-content: center;
   text-align: center;
 }
-
+@media (max-width: 600px) {
+  .animal-placement {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .penguin {
   display: block;
   width: auto;
@@ -65,6 +113,13 @@ font-family: cursive;}
   border: 5px solid rgba(17, 76, 105, 0.381);
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  .penguin {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
 .dragonfly {
   display: block;
   width: auto;
@@ -73,12 +128,25 @@ font-family: cursive;}
   border: 5px solid rgba(17, 76, 105, 0.387);
   border-radius: 10px;
 }
-
+@media (max-width: 600px) {
+  .dragonfly {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
 h1 {
 font-size: 52px; color: rgb(136, 50, 149); 
 grid-area: column 1 / row 1; 
 text-align: center;
 border-bottom: 5px solid rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 5px solid rgb(0, 0, 0);
+  }
 }
 .profile {
   width: 400px;
@@ -89,7 +157,14 @@ border-bottom: 5px solid rgb(0, 0, 0);
   border-width: 5px;
   border-style: solid;
 }
-
+@media (max-width: 600px) {
+  .profile {
+    width: 100%;
+    max-width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
 .name {
   grid-column: 1; grid-row: 3;
   font-size: 30px;
@@ -98,7 +173,16 @@ border-bottom: 5px solid rgb(0, 0, 0);
   border-bottom: 5px solid rgb(0, 0, 0);
 text-align: left;
 }
-
+@media (max-width: 600px) {
+  .name {
+    grid-column: auto;
+    grid-row: auto;
+    font-size: 20px;
+    text-align: center;
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+  }
+}
 .hudbaa {
   position: relative;
   display: flex;
@@ -109,7 +193,18 @@ text-align: left;
   border: none;
   background: transparent;
 }
-
+@media (max-width: 600px) {
+  .hudbaa {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+}
 .texttlacitko {
   font-family: cursive;
   text-size-adjust: auto;
@@ -124,7 +219,22 @@ text-align: left;
   pointer-events: none;
   z-index: 2;
 }
-
+@media (max-width: 600px) {
+  .texttlacitko {
+    font-family: cursive;
+    text-size-adjust: auto;
+    width: 100%;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    color: rgb(239, 114, 255);
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: 2;
+  }
+}
 .albumcover {
   width: 400px;
   height: 300px;
@@ -133,7 +243,14 @@ text-align: left;
   position: relative;
   margin-right: 20px;
 }
-
+@media (max-width: 600px) {
+  .albumcover {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
 .textanimal {
   font-family: cursive;
   text-size-adjust: auto;
@@ -141,7 +258,14 @@ text-align: left;
   font-size: 52px;
 
 }
-
+@media (max-width: 600px) {
+  .textanimal {
+    font-family: cursive;
+    text-size-adjust: auto;
+    color: rgb(106, 166, 170);
+    font-size: 36px;
+  }
+}
 .textpenguin {
   font-family: cursive;
   text-size-adjust: auto;
@@ -152,7 +276,18 @@ text-align: left;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+@media (max-width: 600px) {
+  .textpenguin {
+    font-family: cursive;
+    text-size-adjust: auto;
+    color: rgb(133, 18, 114);
+    font-size: 24px;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
 .textdragonfly {
   font-family: cursive;
   text-size-adjust: auto;
@@ -163,69 +298,15 @@ text-align: left;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-@media (max-width: 700px) {
-  .top-row {
-    position: static;
-    display: block;
-    width: 100%;
-    margin: 20px 0 0 0;
-    padding: 0 10px;
-  }
-
-  .button-row {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin: 20px auto 0;
-  }
-
-  .animal-placement {
-    position: static;
-    left: auto;
-    top: auto;
-    transform: none;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .penguin,
-  .dragonfly {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .info {
-    position: static;
-    width: calc(100% - 20px);
-    margin: 20px auto;
-    padding: 16px;
-  }
-
-  .texttlacitko {
-    font-size: 28px;
-  }
-
-  .textanimal {
-    font-size: 36px;
-  }
-
-  .textpenguin,
+@media (max-width: 600px) {
   .textdragonfly {
+    font-family: cursive;
+    text-size-adjust: auto;
+    color: rgb(133, 18, 114);
+    font-size: 24px;
     position: static;
     top: auto;
     left: auto;
     transform: none;
-    font-size: 24px;
-  }
-
-  .profile {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .name {
-    font-size: 20px;
   }
 }
