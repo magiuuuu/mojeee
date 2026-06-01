@@ -16,16 +16,11 @@
         <p class="textdragonfly">Dragonfly</p>
         <img class="dragonfly" src="./dragonfly.jpeg" alt="dragonfly pic">
       </div>
-      <div class="button-row">
-        <button class="hudbaa" onclick="playAudio()"> 
-          <img src="./Faulty Information (MK).jpg" alt="" class="albumcover">
-          <span class="texttlacitko">Try my favourite song🎶</span>
-        </button>
+     
       </div>
     </div>
     <div class="info">
       <h1>Info</h1>
-      <audio src="Faulty Information (128kbit_AAC).m4a" id="mysong"></audio>
       <img src="./download20260503001325.png" alt="profile pic" class="profile picture">
       <ul class="name">
         <li>⭐Username: Magiu</li>
@@ -34,25 +29,5 @@
         <li>⭐Favorite music: Punk, indie</li>
       </ul>
     </div>
-<script>
-    var audio = document.getElementById("mysong");
-        var button = document.querySelector(".hudbaa .texttlacitko");
-        var image = document.querySelector(".hudbaa .albumcover");
-    function playAudio(mysong) {
-      if (audio.paused) {
-        audio.play()
-        button.innerHTML ="AW already enough :( ?";
-        image.src ="./Faulty Information (MK).jpg"
-      } else {
-        audio.pause()
-        button.innerHTML = "Try my favourite song🎶"
-        image.src ="./Faulty Information (MK).jpg"
-      }
-      if (audio.paused) {restartaudio()}
-      function restartaudio() {audio.currentTime = 0;   
-        
-      }
-    }
-</script>
-</body>
+
 </html>
